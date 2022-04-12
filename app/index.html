@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <!------------Шрифт--------------->
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Display:wght@300;500;700&display=swap" rel="stylesheet">
+   <!--------------------------->
+   <link rel="stylesheet" href="css/app.min.css">
+   <title>Dumbbell home training generator</title>
+</head>
+<body>
+   <div class="wrapper">
+      <header class="header">
+         <div class="header__body">
+            <h1 class="header__title"><img src="images/dumbbell.svg" alt="dumbbell__icon">Dumbbell home training generator</h1>
+            <ul class="header__menu">
+               <li class="menu__item" id="faqButton">FAQ</li>
+            </ul>
+         </div>
+      </header>
+      <main class="main">
+         <section class="section">
+            <h2>Choose a muscle group to create your training routine:</h2>
+            <form class="section__form">
+               <div class="form__item">
+                  <div class="card">
+                     <div class="front">
+                        <img src="images/upperbodyFront.png" alt="" class="form__pic">
+                     </div>
+                     <div class="back">
+                        <img src="images/upperbodyBack.png" alt="" class="form__pic">
+                     </div>
+                  </div>
+                  <h3>Upperbody</h3>
+                  <input type="radio" name="bodyGroup" onchange="checkWatcher(this);" value="upperbody" id="radioFirst">
+               </div>
+               <div class="form__item">
+                  <div class="card">
+                     <div class="front">
+                        <img src="images/lowerbodyFront.png" alt="" class="form__pic">
+                     </div>
+                     <div class="back">
+                        <img src="images/lowerbodyBack.png" alt="" class="form__pic">
+                     </div>
+                  </div>
+                  <h3>Lowerbody</h3>
+                  <input type="radio" name="bodyGroup" onchange="checkWatcher(this);" value="lowerbody" id="radioSecond">
+               </div>
+               <div class="form__item">
+                  <div class="card">
+                     <div class="front">
+                        <img src="images/fullbodyFront.png" alt="" class="form__pic">
+                     </div>
+                     <div class="back">
+                        <img src="images/fullbodyBack.png" alt="" class="form__pic">
+                     </div>
+                  </div>
+                  <h3>Fullbody</h3>
+                  <input type="radio" name="bodyGroup" onchange="checkWatcher(this);" value="fullbody" id="radioThird">
+               </div>
+            </form>
+         </section>
+         <ul class="exersiceList"></ul>
+      </main>
+      <section class="section__FAQ" hidden>
+         <div class="section__FAQ__body">
+            <p>Can you get a great workout with only dumbbells? You bet you can.</p>
+            <p>This simple dumbbell-only workout will get you the most value for time. It hits every major muscle and has an inherent conditioning effect. Get after it!</p>
+            <p>Every training routine is based on the most fuctionally useful movements: <span>squat</span>, <span>bend (deadlift)</span>, <span>lunge</span>, <span>push</span>, <span>pull</span> and <span>twist (crunch)</span>. If you are a beginner, however, upper/lower workouts can definitely be a good style of training to start out with. You may also want to consider experimenting with full body workouts and determine which you enjoy more and works best for your individual goals, capabilities, and lifestyle.</p>
+            <ul>An example week following this strategy may look like:
+               <li>Monday: Upper Workout / Fullbody Workout</li>   
+               <li>Tuesday: Rest</li>   
+               <li>Wednesday: Lower Workout / Fullbody Workout</li>   
+               <li>Thursday: Rest</li>   
+               <li>Friday: Upper Workout / Fullbody Workout</li>   
+               <li>Saturday: Rest</li>   
+               <li>Sunday: Rest</li>  
+            </ul>
+            <p>Choose <span>insensity</span> to achieve your fitness goals. For strength goals, your sets should be built on 3-6 reps. For muscle-building goals, stick to 6-10 reps. For muscular endurance, try 10-15 reps.</p>
+         </div>
+      </section>
+      <footer class="footer">
+         <div class="footer__body">
+            <ul>Developer:
+               <li><a href="mailto:borisovdv1994@yandex.ru"><img src="images/mail-box-email-post-delivery-envelope_108534.svg" alt="mail" srcset=""></a></li>
+               <li><a href="#"><img src="images/instagram-2-1.svg" alt="instagram" srcset=""></a></li>
+               <li><a href="https://www.sololearn.com/profile/4455485" target="_blank"><img src="images/sololearn-2.svg" alt="sololearn" srcset=""></a></li>
+               <li><a href="https://github.com/DmitriyBorisov1994" target="_blank"><img src="images/github-icon.svg" alt="github" srcset=""></a></li>
+            </ul>
+         </div>
+      </footer>
+   </div>
+   <script src="js/app.min.js"></script>
+</body>
+</html>
